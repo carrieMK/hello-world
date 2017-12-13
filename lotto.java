@@ -73,7 +73,7 @@ public class App
     		sb.append(itr.next())
     		  .append(" ");
     	}
-		System.out.print(sb.toString());
+	System.out.print(sb.toString());
     	System.out.println("");
     }
 }
