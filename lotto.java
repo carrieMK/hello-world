@@ -25,7 +25,7 @@ public class App
     	}
     	
     	App app = new App();    	
-		ArrayList<TreeSet<Integer>> lottoNum = new ArrayList<TreeSet<Integer>>();
+	ArrayList<TreeSet<Integer>> lottoNum = new ArrayList<TreeSet<Integer>>();
     	TreeSet<Integer> lottoPic = new TreeSet<Integer>();	    	
     	lottoNum = app.lottoNumber(count);
     	lottoPic = app.lottoNumber2(lottoNum);
@@ -39,7 +39,7 @@ public class App
     
     
     private ArrayList<TreeSet<Integer>> lottoNumber(int n) {  	
-		ArrayList<TreeSet<Integer>> treeArray = new ArrayList<TreeSet<Integer>>();		
+	ArrayList<TreeSet<Integer>> treeArray = new ArrayList<TreeSet<Integer>>();		
     	for(int i = 0; i < n; i++) {
     		TreeSet<Integer> set = new TreeSet<Integer>();	
     		while(set.size() < 6) {
