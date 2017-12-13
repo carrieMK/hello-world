@@ -47,7 +47,7 @@ public class App
     		}
     		treeArray.add(set);
     	}    	
-		return treeArray;
+	return treeArray;
     }    
     
     private TreeSet<Integer> lottoNumber2(ArrayList<TreeSet<Integer>> t) {
@@ -61,15 +61,17 @@ public class App
     	for(int i = 0; i < 6; i++) {
     		set.add(numAll.get(i));
     	}    	
-		return set;
+	return set;
     }
     
     private void SetPrint(TreeSet<Integer> set) {
-    	Iterator<Integer> itr = set.iterator();    	
+    	Iterator<Integer> itr = set.iterator();
+    	StringBuffer sb = new StringBuffer();
     	while(itr.hasNext()) {
-    		int i = itr.next();
-    		System.out.print(i + "  ");
+    		sb.append(itr.next());
+    		sb.append(" ");
     	}
+	System.out.print(sb.toString());
     	System.out.println("");
     }
 }
