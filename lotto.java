@@ -57,10 +57,12 @@ public class App
     		numAll.addAll(t.get(i));
     	}   	
     	
-    	Collections.shuffle(numAll);    	
-    	for(int i = 0; i < 6; i++) {
-    		set.add(numAll.get(i));
-    	}    	
+    	Collections.shuffle(numAll);
+    	int j = 0;
+    	while(set.size() < 6) {
+        	set.add(numAll.get(j));
+    		j++;
+    	}
 	return set;
     }
     
@@ -68,10 +70,10 @@ public class App
     	Iterator<Integer> itr = set.iterator();
     	StringBuffer sb = new StringBuffer();
     	while(itr.hasNext()) {
-    		sb.append(itr.next());
-    		sb.append(" ");
+    		sb.append(itr.next())
+    		  .append(" ");
     	}
-	System.out.print(sb.toString());
+		System.out.print(sb.toString());
     	System.out.println("");
     }
 }
