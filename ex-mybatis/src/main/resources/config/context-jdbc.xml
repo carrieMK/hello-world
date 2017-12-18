@@ -7,9 +7,9 @@
  						http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd">
 	 <bean id="dataSourceSpied" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 		 <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
-		 <property name="url" value="jdbc:oracle:thin:@150.25.22.173:1521:RUEORCL" />
-		 <property name="username" value="mkki" />
-		 <property name="password" value="kim041" />
+		 <property name="url" value="jdbc:oracle:thin:****" />
+		 <property name="username" value="****" />
+		 <property name="password" value="****" />
 	 </bean>
 	 	 
 	 <bean id="dataSource" class="net.sf.log4jdbc.Log4jdbcProxyDataSource">
